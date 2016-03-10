@@ -15,7 +15,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object fastqTrim {
 
   def doTrim(inputPath: String, outputPath: String ,hdfsMasterUri:String): Unit = {
-    val name = "fastqTrimv1.3.2"
+    val name = "fastqTrimv1.3.3"
     val sc = new SparkContext(new SparkConf().setAppName(name))
     val file = sc.newAPIHadoopFile[Text, Text, CustomInputFormat](hdfsMasterUri+inputPath)
     val standCoreChar = fastqTrimUtil.getStandardScore(file)
