@@ -37,4 +37,8 @@ p3: hdfs master uri e.g. hdfs://master:9000<br>
 　`AGGTTGACCACATTGAGATGGTGCCAGCAATAGATGCTGGAATT`<br>
 　`+`<br>
 　`AAFFFKKKKKKKKKKFKKKKKKKKKKKKKKKKKKKKKKKKKKKK`<br>
-　`...`<br>
+　`...`<br><br><br>
+　　　　　　　　　　　　　　　　　![](https://github.com/yuyang2015/FastqTrim/raw/master/pic/demo.jpg)
+<br>
+####defect
+due to the imperfection of code,every hadoop block(128m) will drop one record.
