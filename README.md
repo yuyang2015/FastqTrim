@@ -1,4 +1,4 @@
-FastqTrim
+FastqTrim v0.2.6
 ===
 A fastq file trim tool for high throughput sequence data by Spark.
 ---
