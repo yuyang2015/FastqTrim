@@ -46,6 +46,9 @@ object fastqTrim {
           if(lastCharPair.equals(""))  "!!" else array(0)+"\n"+secondCharPair+"\n"+"+"+"\n"+lastCharPair
         }).filter(line => !line.startsWith("!!")).coalesce(1,true).saveAsTextFile(outputPath)
         sc.stop()
+        println("the standCoreChar is : "+standCoreChar)
+      }else{
+        println("can not get standCoreChar !!!")
       }
   }
 }
